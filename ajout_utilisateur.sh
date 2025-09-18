@@ -1,3 +1,4 @@
+ajout_utilisateur{
 #!/bin/bash
 
 # Demander le nom de l'utilisateur
@@ -30,3 +31,4 @@ else
     echo "Échec de la création de l'utilisateur."
     exit 1
 fi
+}
