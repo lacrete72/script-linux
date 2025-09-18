@@ -1,7 +1,9 @@
 #!/bin/bash
+
 # ajout des script
 source ./menu-paquet.sh
 source ./menu-utilisateur.sh
+
 while true; do
     clear
     echo "===== MENU ====="
@@ -13,10 +15,10 @@ while true; do
 
     case $choix in
         1)
-            menu-utilisateur.sh
+            menu-utilisateur
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
-            menu-paquet.sh
+            menu-paquet
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
             echo "Au revoir !"
