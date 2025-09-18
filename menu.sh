@@ -1,18 +1,22 @@
 menu(){
 #!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+
 # ajout des script
 source ./menu_paquet.sh
 source ./menu_utilisateur.sh
 
 while true; do
     clear
-    echo "===== MENU ====="
-    echo "1) Menu utilisateur"
-    echo "2) Menu paquet"
-    echo "3) Quitter"
-    echo "================"
-    read -p "Choisissez une option [1-3] : " choix
+    echo "${YELLOW}===== MENU ====="
+    echo "${GREEN}1) Menu utilisateur"
+    echo "${GREEN}2) Menu paquet"
+    echo "${GREEN}3) Quitter"
+    echo "${YELLOW}================"
+    read -p "${GREEN}Choisissez une option [1-3] : " choix
 
     case $choix in
         1)
