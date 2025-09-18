@@ -2,6 +2,7 @@ menu_ip(){
 #!/bin/bash
 source ./ip_fixe.sh
 source ./dhcp.sh
+source ./menu.sh
 
 while true; do
     clear
@@ -21,7 +22,7 @@ while true; do
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
             echo "Au revoir !"
-            exit 0 ;;
+            menu ;;
         *)
             echo "Option invalide."
             read -p "Appuyez sur Entrée pour continuer..." ;;
