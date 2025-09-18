@@ -1,4 +1,4 @@
-tremenu_ip(){
+menu_ip(){
 #!/bin/bash
 source ./ip_fixe.sh
 source ./dhcp.sh
