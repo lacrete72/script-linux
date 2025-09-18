@@ -13,13 +13,13 @@ fi
 
 while true; do
     clear
-    echo "===== MENU - Gestion des paquets (Debian/Ubuntu) ====="
-    echo "1) Installer un paquet"
-    echo "2) Vérifier si un paquet est installé"
-    echo "3) Supprimer un paquet"
-    echo "4) Mettre à jour la liste des paquets"
-    echo "5) Quitter"
-    echo "======================================================"
+    echo -e "${YELLOW}===== MENU - Gestion des paquets (Debian/Ubuntu) ====="
+    echo -e "${GREEN}1) Installer un paquet"
+    echo -e "${GREEN}2) Vérifier si un paquet est installé"
+    echo -e "${GREEN}3) Supprimer un paquet"
+    echo -e "${GREEN}4) Mettre à jour la liste des paquets"
+    echo -e "${GREEN}5) Quitter"
+    echo -e "$YELLOW}======================================================"
     read -p "Choisissez une option [1-5] : " choix
 
     case $choix in
