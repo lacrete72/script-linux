@@ -1,4 +1,4 @@
-menu_utilisateur{
+menu_utilisateur(){
 #!/bin/bash
 
 # ajout des script
