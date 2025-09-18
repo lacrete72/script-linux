@@ -11,13 +11,7 @@ while true; do
 
     case $choix in
         1)
-            read -p "Nom du nouvel utilisateur : " nom
-            sudo useradd -m "$nom"
-            if [[ $? -eq 0 ]]; then
-                echo "Utilisateur '$nom' créé avec succès."
-            else
-                echo "Erreur lors de la création de l'utilisateur."
-            fi
+            ./ajout-utilisateur.sh
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
             echo "Liste des utilisateurs :"
