@@ -4,6 +4,7 @@ menu_utilisateur(){
 # ajout des script
 source ./ajout_utilisateur.sh
 source ./suppression_utilisateur.sh
+source ./menu.sh
 
 while true; do
     clear
