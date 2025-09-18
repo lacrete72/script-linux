@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# ajout des script
+source ./ajout-utilisateur.sh
+source ./install-paquet.sh
+source ./menu-paquet.sh
+source ./menu-utilisateur.sh
+
 # Vérifier si l'utilisateur est root ou a sudo
 if [[ $EUID -ne 0 ]]; then
     echo "Ce script doit être exécuté avec les droits root (sudo)."
