@@ -1,3 +1,4 @@
+install_paquet(){
 read -p "Entrez le nom du paquet à installer : " paquet
             if dpkg -s "$paquet" &> /dev/null; then
                 echo "Le paquet '$paquet' est déjà installé."
@@ -9,3 +10,4 @@ read -p "Entrez le nom du paquet à installer : " paquet
                     echo "Erreur lors de l'installation du paquet."
                 fi
             fi
+}
