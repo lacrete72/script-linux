@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ajout des script
-source ./ajout-utilisateur.sh
-source ./suppression-utilisateur.sh
+source ./ajout_utilisateur.sh
+source ./suppression_utilisateur.sh
 
 while true; do
     clear
@@ -16,14 +16,14 @@ while true; do
 
     case $choix in
         1)
-            ajout-utilisateur
+            ajout_utilisateur
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
             echo "Liste des utilisateurs :"
             cut -d: -f1 /etc/passwd
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
-            suppression-utilisateur.sh
+            suppression_utilisateur.sh
             read -p "Appuyez sur Entrée pour continuer..." ;;
         4)
             echo "Au revoir !"
