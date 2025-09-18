@@ -3,7 +3,6 @@ menu_paquet(){
 
 # ajout des script
 source ./install_paquet.sh
-source ./menu.sh
 
 # Vérifier si l'utilisateur est root ou a sudo
 if [[ $EUID -ne 0 ]]; then
@@ -49,7 +48,7 @@ while true; do
             read -p "Appuyez sur Entrée pour continuer..." ;;
         5)
             echo "Fermeture du gestionnaire. À bientôt !"
-            menu ;;
+            ./menu.sh ;;
         *)
             echo "Option invalide. Choisissez un numéro entre 1 et 5."
             read -p "Appuyez sur Entrée pour continuer..." ;;
