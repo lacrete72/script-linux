@@ -1,4 +1,4 @@
-ajout_utilisateur{
+ajout_utilisateur(){
 #!/bin/bash
 
 # Demander le nom de l'utilisateur
