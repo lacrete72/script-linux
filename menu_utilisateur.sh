@@ -9,11 +9,11 @@ source ./menu.sh
 while true; do
     clear
     echo -e "${YELLOW}===== MENU ====="
-    echo "1) Créer un utilisateur"
-    echo "2) Lister les utilisateurs"
-    echo "3) supprimer utilisateur"
-    echo "4) Quitter"
-    echo "================"
+    echo -e "${GREEN}1) Créer un utilisateur"
+    echo -e "${GREEN}2) Lister les utilisateurs"
+    echo -e "${GREEN}3) supprimer utilisateur"
+    echo -e "${GREEN}4) Quitter"
+    echo "${YELLOW}================"
     read -p "Choisissez une option [1-4] : " choix
 
     case $choix in
