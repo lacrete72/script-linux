@@ -1,3 +1,4 @@
+suppression_utilisateur{
 #!/bin/bash
 
 # Vérifier si le script est exécuté avec les droits root
@@ -32,3 +33,4 @@ else
     echo " L'utilisateur '$utilisateur' n'existe pas."
     exit 1
 fi
+}
