@@ -1,3 +1,4 @@
+ip_fixe(){
 #!/bin/bash
 
 # Vérifie si le script est exécuté en tant que root
@@ -61,4 +62,4 @@ if [[ "$restart" =~ ^[Yy]$ ]]; then
 else
     echo "ℹ️ Redémarrage manuel requis pour appliquer la configuration."
 fi
-
+}
