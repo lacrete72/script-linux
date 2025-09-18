@@ -1,4 +1,4 @@
-suppression_utilisateur{
+suppression_utilisateur(){
 #!/bin/bash
 
 # Vérifier si le script est exécuté avec les droits root
