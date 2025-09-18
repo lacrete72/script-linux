@@ -1,0 +1,4 @@
+dhcp(){
+#!/bin/bash
+
+}
