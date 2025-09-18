@@ -1,5 +1,7 @@
 menu_ip(){
 #!/bin/bash
+source ./ip_fixe.sh
+
 while true; do
     clear
     echo -e "${YELLOW}===== MENU ====="
