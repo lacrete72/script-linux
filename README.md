@@ -6,4 +6,8 @@ git clone https://github.com/lacrete72/script-linux
 
 ```
 
-### 
+### lancement du script
+
+```
+bash main.sh
+```
