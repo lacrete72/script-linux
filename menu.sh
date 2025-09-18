@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ajout des script
-source ./menu_paquet.sh;
-source ./menu_utilisateur.sh;
+source ./menu_paquet.sh
+source ./menu_utilisateur.sh
 
 while true; do
     clear
