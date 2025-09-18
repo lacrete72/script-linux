@@ -28,7 +28,7 @@ while true; do
             read -p "Appuyez sur Entrée pour continuer..." ;;
         4)
             echo "Au revoir !"
-            exit 0 ;;
+            ./menu.sh;;
         *)
             echo "Option invalide."
             read -p "Appuyez sur Entrée pour continuer..." ;;
