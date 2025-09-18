@@ -1,14 +1,14 @@
-menu_ip(){
+tremenu_ip(){
 #!/bin/bash
 source ./ip_fixe.sh
+source ./dhcp.sh
 
 while true; do
     clear
     echo -e "${YELLOW}===== MENU ====="
     echo -e "${GREEN}1) assigner IP"
-    echo -e "${GREEN}2) Menu paquet"
-    echo -e "${GREEN}3) Menu IP"
-    echo -e "${GREEN}4) Quitter"
+    echo -e "${GREEN}2) mettre en DHCP"
+    echo -e "${GREEN}3) Quitter"
     echo -e "${YELLOW}================${NC}"
     read -p "Choisissez une option [1-4] : " choix
 
@@ -17,12 +17,9 @@ while true; do
             ip_fixe
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
-            menu_paquet
+            dhcp
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
-            menu_ip
-            read -p "Appuyez sur Entrée pour continuer..." ;;
-        4)
             echo "Au revoir !"
             exit 0 ;;
         *)
