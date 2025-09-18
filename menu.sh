@@ -12,12 +12,12 @@ source ./menu_utilisateur.sh
 
 while true; do
     clear
-    echo "${YELLOW}===== MENU ====="
-    echo "${GREEN}1) Menu utilisateur"
-    echo "${GREEN}2) Menu paquet"
-    echo "${GREEN}3) Quitter"
-    echo "${YELLOW}================"
-    read -p "${GREEN}Choisissez une option [1-3] : " choix
+    echo -e "${YELLOW}===== MENU ====="
+    echo -e "${GREEN}1) Menu utilisateur"
+    echo -e "${GREEN}2) Menu paquet"
+    echo -e "${GREEN}3) Quitter"
+    echo -e "${YELLOW}================"
+    read -p -e "${GREEN}Choisissez une option [1-3] : " choix
 
     case $choix in
         1)
