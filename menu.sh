@@ -10,15 +10,17 @@ NC='\033[0m'  # No color, pour réinitialiser
 # ajout des script
 source ./menu_paquet.sh
 source ./menu_utilisateur.sh
+source ./menu_ip.sh
 
 while true; do
     clear
     echo -e "${YELLOW}===== MENU ====="
     echo -e "${GREEN}1) Menu utilisateur"
     echo -e "${GREEN}2) Menu paquet"
-    echo -e "${GREEN}3) Quitter"
+    echo -e "${GREEN}3) Menu paquet"
+    echo -e "${GREEN}4) Quitter"
     echo -e "${YELLOW}================${NC}"
-    read -p "Choisissez une option [1-3] : " choix
+    read -p "Choisissez une option [1-4] : " choix
 
     case $choix in
         1)
@@ -28,6 +30,9 @@ while true; do
             menu_paquet
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
+            menu_ip
+             ;;
+        4)
             echo "Au revoir !"
             exit 0 ;;
         *)
