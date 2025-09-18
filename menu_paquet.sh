@@ -1,4 +1,4 @@
-menu_paquet{
+menu_paquet(){
 #!/bin/bash
 
 # ajout des script
