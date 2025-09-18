@@ -2,14 +2,15 @@
 
 # ajout des script
 source ./ajout-utilisateur.sh
-
+source ./suppression-utilisateur.sh
 
 while true; do
     clear
     echo "===== MENU ====="
     echo "1) Créer un utilisateur"
     echo "2) Lister les utilisateurs"
-    echo "3) Quitter"
+    echo "3) Lister les utilisateurs"
+    echo "4) Quitter"
     echo "================"
     read -p "Choisissez une option [1-3] : " choix
 
@@ -22,6 +23,9 @@ while true; do
             cut -d: -f1 /etc/passwd
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
+            suppression-utilisateur.sh
+            read -p "Appuyez sur Entrée pour continuer..." ;;
+        4)
             echo "Au revoir !"
             exit 0 ;;
         *)
