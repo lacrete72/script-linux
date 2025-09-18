@@ -25,7 +25,7 @@ while true; do
             cut -d: -f1 /etc/passwd
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
-            suppression_utilisateur.sh
+            suppression_utilisateur
             read -p "Appuyez sur Entrée pour continuer..." ;;
         4)
             echo "Au revoir !"
