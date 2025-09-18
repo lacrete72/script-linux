@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ajout des script
+source ./ajout-utilisateur.sh
+
+
 while true; do
     clear
     echo "===== MENU ====="
