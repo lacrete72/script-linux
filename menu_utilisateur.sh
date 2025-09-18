@@ -8,7 +8,7 @@ source ./menu.sh
 
 while true; do
     clear
-    echo "===== MENU ====="
+    echo -e "${YELLOW}===== MENU ====="
     echo "1) Créer un utilisateur"
     echo "2) Lister les utilisateurs"
     echo "3) supprimer utilisateur"
