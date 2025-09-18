@@ -13,7 +13,7 @@ while true; do
     echo -e "${GREEN}2) Lister les utilisateurs"
     echo -e "${GREEN}3) supprimer utilisateur"
     echo -e "${GREEN}4) Quitter"
-    echo "${YELLOW}================"
+    echo "${YELLOW}================${NC}"
     read -p "Choisissez une option [1-4] : " choix
 
     case $choix in
