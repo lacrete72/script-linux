@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # ajout des script
-source ./ajout-utilisateur.sh
 source ./install-paquet.sh
-source ./menu-paquet.sh
-source ./menu-utilisateur.sh
 
 # Vérifier si l'utilisateur est root ou a sudo
 if [[ $EUID -ne 0 ]]; then
@@ -25,7 +22,7 @@ while true; do
 
     case $choix in
         1)
-            ./install-paquet.sh
+            install-paquet.sh
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
             read -p "Entrez le nom du paquet à vérifier : " paquet
