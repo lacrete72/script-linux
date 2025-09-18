@@ -37,4 +37,18 @@ iface lo inet loopback
 auto $interface
 iface $interface inet dhcp
 EOF
+
+echo -e "${GREEN} Configuration appliquée à $interface ${NC}"
+echo -e "${GREEN} Sauvegarde créée : /etc/network/interfaces.bak${NC}"
+
+# Demande de redémarrage
+read -p "Redémarrer le réseau maintenant ? (y/n) : " restart
+if [[ "$restart" =~ ^[Yy]$ ]]; then
+    systemctl restart networking
+    echo -e "${GREEN} Service réseau redémarré.${NC}"
+else
+    echo -e "${GREEN} Redémarrage manuel requis pour appliquer la configuration.${NC}"
+fi
+
+}
 }
