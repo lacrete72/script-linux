@@ -19,7 +19,7 @@ while true; do
 
     case $choix in
         1)
-            install-paquet.sh
+            ./install-paquet.sh
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
             read -p "Entrez le nom du paquet à vérifier : " paquet
