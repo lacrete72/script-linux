@@ -6,5 +6,6 @@
     YELLOW='\033[0;33m'
     NC='\033[0m'  # No Color pour réinitialiser la couleur
 source ./menu.sh
-
+source ./fixe_ip.sh
+source ./menu_ip.sh
 menu
