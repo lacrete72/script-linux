@@ -1,3 +1,4 @@
+menu_utilisateur{
 #!/bin/bash
 
 # ajout des script
@@ -33,3 +34,4 @@ while true; do
             read -p "Appuyez sur Entrée pour continuer..." ;;
     esac
 done
+}
