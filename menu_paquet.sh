@@ -19,7 +19,7 @@ while true; do
     echo -e "${GREEN}3) Supprimer un paquet"
     echo -e "${GREEN}4) Mettre à jour la liste des paquets"
     echo -e "${GREEN}5) Quitter"
-    echo -e "$YELLOW}======================================================"
+    echo -e "$YELLOW}======================================================${NC}"
     read -p "Choisissez une option [1-5] : " choix
 
     case $choix in
