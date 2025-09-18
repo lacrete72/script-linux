@@ -9,7 +9,7 @@ while true; do
     echo "===== MENU ====="
     echo "1) Créer un utilisateur"
     echo "2) Lister les utilisateurs"
-    echo "3) Lister les utilisateurs"
+    echo "3) supprimer utilisateur"
     echo "4) Quitter"
     echo "================"
     read -p "Choisissez une option [1-3] : " choix
