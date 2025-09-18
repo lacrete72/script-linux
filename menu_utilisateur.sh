@@ -14,7 +14,7 @@ while true; do
     echo "3) supprimer utilisateur"
     echo "4) Quitter"
     echo "================"
-    read -p "Choisissez une option [1-3] : " choix
+    read -p "Choisissez une option [1-4] : " choix
 
     case $choix in
         1)
