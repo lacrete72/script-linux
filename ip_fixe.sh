@@ -51,15 +51,15 @@ iface $interface inet static
     gateway $gateway
 EOF
 
-echo "✅ Configuration appliquée à $interface"
-echo "📁 Sauvegarde créée : /etc/network/interfaces.bak"
+echo -e "${GREEN} Configuration appliquée à $interface ${NC}"
+echo -e "${GREEN} Sauvegarde créée : /etc/network/interfaces.bak${NC}"
 
 # Demande de redémarrage
 read -p "Redémarrer le réseau maintenant ? (y/n) : " restart
 if [[ "$restart" =~ ^[Yy]$ ]]; then
     systemctl restart networking
-    echo "🔁 Service réseau redémarré."
+    echo -e "${GREEN} Service réseau redémarré.${NC}"
 else
-    echo "ℹ️ Redémarrage manuel requis pour appliquer la configuration."
+    echo -e "${GREEN} Redémarrage manuel requis pour appliquer la configuration.${NC}"
 fi
 }
