@@ -15,7 +15,7 @@ while true; do
 
     case $choix in
         1)
-            ./ajout-utilisateur.sh
+            ajout-utilisateur.sh
             read -p "Appuyez sur Entrée pour continuer..." ;;
         2)
             echo "Liste des utilisateurs :"
