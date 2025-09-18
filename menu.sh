@@ -17,7 +17,7 @@ while true; do
     echo -e "${YELLOW}===== MENU ====="
     echo -e "${GREEN}1) Menu utilisateur"
     echo -e "${GREEN}2) Menu paquet"
-    echo -e "${GREEN}3) Menu paquet"
+    echo -e "${GREEN}3) Menu IP"
     echo -e "${GREEN}4) Quitter"
     echo -e "${YELLOW}================${NC}"
     read -p "Choisissez une option [1-4] : " choix
@@ -31,7 +31,7 @@ while true; do
             read -p "Appuyez sur Entrée pour continuer..." ;;
         3)
             menu_ip
-             ;;
+            read -p "Appuyez sur Entrée pour continuer..." ;;
         4)
             echo "Au revoir !"
             exit 0 ;;
